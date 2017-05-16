@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111111;
+}
+		
+		
+form{
+	border : 3px solid #f1f1f1:
+}
+
+input[type=text],
+input[type=password]{
+		width: 100%;
+		padding: 12 px 20 px;
+		margin: 8px 0;
+		dispaly:inline-bock;
+		border: 1px solid #ccc;
+		box-sizing:border_box;
+}
+
+button{
+		background-color:#4CAF50;
+		color:white;
+		padding: 14px 20px;
+		margin:8px 0;
+		border:none;
+		curson:pointer;
+		width:100%;
+
+button:hover{
+		opacity:0.8;
+}
+.container{
+		padding:20px;
+}
+
+</style>
+<head>
+<title>Events Management System</title>
+</head>
+
+<body>
+
+<h2> Welcome to management system</h2>
+
+<ul>
+	<li><a href="#events"> events </a></li>
+	<li><a href="#manage"> manage </a></li>
+	<li><a href="#other"> other </a></li>
+</ul>
+
+
+
+<div class="container">
+<form action="/login.php">
+<label><b> Username </b></label>
+		<input type="text" name="username" size="15" required>
+	
+<label><b> Password </b></label>
+		<input type="password" name="password" size="15" required>
+	
+
+	<button type="submit">login</button>
+</div>
+
+</form>
+
+<ul>
+
+</body>
+</html>

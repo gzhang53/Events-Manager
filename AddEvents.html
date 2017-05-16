@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111111;
+}
+		
+		
+form{
+	border : 3px solid #f1f1f1:
+}
+
+</style>
+<body>
+
+<h1>Events Manager</h1>
+
+<ul>
+	<li><a href="#events"> events </a></li>
+	<li><a href="#manage"> manage </a></li>
+	<li><a href="#other"> other </a></li>
+</ul>
+
+<div id="info" align="center">
+<form method="post" action="/manageEvents.php">
+
+<label><b> Team Name </b></label><br><br>
+		<input type="text" name="team" size="15" required> <br><br>
+		
+<label><b> Date </b></label><br><br>
+
+		<input type="date" name="date"> <br><br>
+
+<label><b> Location </b></label> <br><br>
+
+		<input type="text" name="location"> <br><br>
+		
+<button type="submit">Add</button> <br>
+
+<div id="map" style="width:400px;height:400px;background:yellow"></div>
+
+
+
+<script>
+function myMap() {
+var mapOptions = {
+    center: new google.maps.LatLng(43, -81.27),
+    zoom: 10,
+    mapTypeId: google.maps.MapTypeId.HYBRID
+}
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCATTeQFgPhcOINLi358pvOlZ6C8D-kD4Q&callback=myMap"></script>
+
+
+</body>
+</html>
